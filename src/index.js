@@ -1,28 +1,43 @@
-const root= documentElementById("root");
-const final= documentElementById("final");
-const offset= 3;
+//const root= document.getElementById("root");
+//const code= document.getElementById("code");
+//const decode= document.getElementById("decode");
+const pruebaCode= document.getElementById("pruebaCode");
+//const buttonDecode= document.getElementById("buttonDecode");
+//const ubicacion= document.getElementById("ubicacion");
+//const offset= 3;
 
-function esconder(){ 
-root.classList.add('hideElement')
-final.classList.remove('hideElement')
+//function esconder(){ 
+//root.classList.add('hideElement')
+//code.classList.remove('hideElement')
 
-const ubicacion =
-document.getElementById ('ubicacion').value;
-console.log (ubicacion);
+pruebaCode.addEventListener("click",()=>{
+    alert("hey")
+})
 
-codificar.addEventListener("click",msj);
+//function esconder2(){
+//root.classList.add('hideElement')  
+//decode.classList.remove('hideElement')
+
+//buttonDecode.addEventListener("click",esconder2())
+//}
+
+//const ubicacion =
+//ubicacion.value;
+//console.log ("ubicacion");
+
+//codificar.addEventListener("click",msj);
 //Obteniendo el código ascii y convierte a mayusculas
-function msj (){
-    let mensajeObtenido =mensaje.value;
-    let mayuscula= mensajeObtenido.toUpperCase();
-    let mayus=mayuscula.charCodeAt();
+//function msj (){
+  //  let mensajeObtenido =mensaje.value;
+   // let mayuscula= mensajeObtenido.toUpperCase();
+    //let mayus=mayuscula.charCodeAt();
 
- for(let 1=0; i<mayuscula.length; i++){
-     let letraAscii= mayuscula.charCodeAt(i);
-     let formula= (letraAscii-65+offset)%26+65;
-     let resultado= String.fromCharCode(formula);
-     console.log(resultado);
- }
-}
-}
+ //for(let 1=0; i<mayuscula.length; i++){
+   //  let letraAscii= mayuscula.charCodeAt(i);
+     //let formula= (letraAscii-65+offset)%26+65;
+     //let resultado= String.fromCharCode(formula);
+     //console.log(resultado);
+ //}
+//}
+//}
 
