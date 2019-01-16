@@ -1,3 +1,15 @@
 .hideElement{
     display: none;
   }
+
+  #root{
+    text-align:center;
+    }
+  
+  #code{
+    text-align:center;
+    }
+
+  #decode{
+    text-align:center;
+    }

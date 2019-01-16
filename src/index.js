@@ -1,25 +1,33 @@
-//const root= document.getElementById("root");
-//const code= document.getElementById("code");
-//const decode= document.getElementById("decode");
+const root= document.getElementById("root");
+const code= document.getElementById("code");
+const decode= document.getElementById("decode");
 const pruebaCode= document.getElementById("pruebaCode");
-//const buttonDecode= document.getElementById("buttonDecode");
+const pruebaDecode= document.getElementById("pruebaDecode");
+const returnCode= document.getElementById("returnCode")
+const returnDecode= document.getElementById("returnDecode")
 //const ubicacion= document.getElementById("ubicacion");
 //const offset= 3;
 
-//function esconder(){ 
-//root.classList.add('hideElement')
-//code.classList.remove('hideElement')
-
 pruebaCode.addEventListener("click",()=>{
-    alert("hey")
+  root.classList.add('hideElement')
+  code.classList.remove('hideElement')
 })
 
-//function esconder2(){
-//root.classList.add('hideElement')  
-//decode.classList.remove('hideElement')
+pruebaDecode.addEventListener("click",()=>{
+  root.classList.add('hideElement')
+  decode.classList.remove('hideElement')
+})
 
-//buttonDecode.addEventListener("click",esconder2())
-//}
+returnCode.addEventListener("click",()=>{
+  code.classList.add('hideElement')
+  root.classList.remove('hideElement')
+})
+
+returnDecode.addEventListener("click",()=>{
+  decode.classList.add('hideElement')
+  root.classList.remove('hideElement')
+})
+
 
 //const ubicacion =
 //ubicacion.value;
