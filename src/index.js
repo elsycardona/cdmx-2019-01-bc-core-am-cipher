@@ -5,12 +5,17 @@ const pruebaCode= document.getElementById("pruebaCode");
 const pruebaDecode= document.getElementById("pruebaDecode");
 const returnCode= document.getElementById("returnCode")
 const returnDecode= document.getElementById("returnDecode")
-//const ubicacion= document.getElementById("ubicacion");
-//const offset= 3;
+//const offset= 33;
 
 pruebaCode.addEventListener("click",()=>{
   root.classList.add('hideElement')
   code.classList.remove('hideElement')
+  const ubicacion= document.getElementById("ubicacion").value;
+  console.log(ubicacion)
+  const offset=parseInt(document.getElementById("offset").value);
+  console.log(offset)
+  const ubxx = window.cipher.encode(offset, ubicacion);
+  ubicacion.innerHTML = ubxx;
 })
 
 pruebaDecode.addEventListener("click",()=>{
@@ -27,6 +32,18 @@ returnDecode.addEventListener("click",()=>{
   decode.classList.add('hideElement')
   root.classList.remove('hideElement')
 })
+
+
+
+//function codificar (){
+  //var caracteres = [];
+  //valor = ubicacion.value;
+  //for (var i=0; i<valor.length; i++){
+    //caracteres[i] = valor.charAt(i).charCodeAt(0);
+    //ascii const = i => i.charCodeAt (0);
+  //}
+    //code.innerHTML = caracteres.toString();
+//}
 
 
 //const ubicacion =
