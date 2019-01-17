@@ -2,7 +2,7 @@ const root= document.getElementById("root");
 const code= document.getElementById("code");
 const decode= document.getElementById("decode");
 const pruebaCode= document.getElementById("pruebaCode");
-const pruebaPagdecode= document.getElementById("pruebaPagdecode");
+const pruebaDecodecode= document.getElementById("pruebaPagdecode");
 const returnCode= document.getElementById("returnCode")
 const returnDecode= document.getElementById("returnDecode")
 //...
@@ -18,7 +18,7 @@ pruebaCode.addEventListener("click",()=>{
   ubicacion.innerHTML = ubxx;
 })
 
-pruebaPagdecode.addEventListener("click",()=>{
+pruebaDecode.addEventListener("click",()=>{
   root.classList.add('hideElement')
   decode.classList.remove('hideElement')
   const ubicacionD= document.getElementById("ubicacion").value;
