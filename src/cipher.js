@@ -35,3 +35,4 @@ window.cipher = {
   ubyEscrito.innerHTML = uby.toString();
   }};
 //JUEVES2
+//sifuncionaba
