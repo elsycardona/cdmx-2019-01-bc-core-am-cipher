@@ -2,9 +2,9 @@ const root= document.getElementById("root");
 const code= document.getElementById("code");
 const decode= document.getElementById("decode");
 const pruebaCode= document.getElementById("pruebaCode");
-const pruebaDecode= document.getElementById("pruebaDecode");
+const pruebaPagdecode= document.getElementById("pruebaPagdecode");
 const returnCode= document.getElementById("returnCode")
-const returnDecode= document.getElementById("returnDecode")
+const returnPagdecode= document.getElementById("returnPagdecode")
 //const offset= 33;
 
 pruebaCode.addEventListener("click",()=>{
@@ -18,9 +18,15 @@ pruebaCode.addEventListener("click",()=>{
   ubicacion.innerHTML = ubxx;
 })
 
-pruebaDecode.addEventListener("click",()=>{
+pruebaPagdecode.addEventListener("click",()=>{
   root.classList.add('hideElement')
-  decode.classList.remove('hideElement')
+  pagdecode.classList.remove('hideElement')
+  const ubicacion= document.getElementById("ubicacion").value;
+  console.log(ubicacion)
+  const offset=parseInt(document.getElementById("offset").value);
+  console.log(offset)
+  const ubyy = window.cipher.decoding(offset, ubicacion);
+  ubicacion.innerHTML = ubyy;
 })
 
 returnCode.addEventListener("click",()=>{
@@ -29,7 +35,7 @@ returnCode.addEventListener("click",()=>{
 })
 
 returnDecode.addEventListener("click",()=>{
-  decode.classList.add('hideElement')
+  pagdecode.classList.add('hideElement')
   root.classList.remove('hideElement')
 })
 //COMENTARIO
