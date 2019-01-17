@@ -12,7 +12,7 @@ pruebaCode.addEventListener("click",()=>{
   code.classList.remove('hideElement')
   const ubicacion= document.getElementById("ubicacion").value;
   console.log(ubicacion)
-  const offset=parseInt(document.getElementById("offset").value);
+  const offset= parseInt(document.getElementById("offset").value);
   console.log(offset)
   const ubxx = window.cipher.encode(offset, ubicacion);
   ubicacion.innerHTML = ubxx;
@@ -21,6 +21,12 @@ pruebaCode.addEventListener("click",()=>{
 pruebaDecode.addEventListener("click",()=>{
   root.classList.add('hideElement')
   decode.classList.remove('hideElement')
+  const ubicacion= document.getElementById("ubicacion").value;
+  console.log(ubicacion)
+  const offset=parseInt(document.getElementById("offset").value);
+  console.log(offset)
+  const ubyy = window.cipher.decode(offset, ubicacion);
+  ubicacion.innerHTML = ubyy;
 })
 
 returnCode.addEventListener("click",()=>{
