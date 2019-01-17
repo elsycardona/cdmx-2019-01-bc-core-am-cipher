@@ -5,14 +5,14 @@ const pruebaCode= document.getElementById("pruebaCode");
 const pruebaDecode= document.getElementById("pruebaDecode");
 const returnCode= document.getElementById("returnCode")
 const returnDecode= document.getElementById("returnDecode")
-//const offset= 33;
+//...
 
 pruebaCode.addEventListener("click",()=>{
   root.classList.add('hideElement')
   code.classList.remove('hideElement')
   const ubicacion= document.getElementById("ubicacion").value;
   console.log(ubicacion)
-  const offset=parseInt(document.getElementById("offset").value);
+  const offset= parseInt(document.getElementById("offset").value);
   console.log(offset)
   const ubxx = window.cipher.encode(offset, ubicacion);
   ubicacion.innerHTML = ubxx;
@@ -21,14 +21,22 @@ pruebaCode.addEventListener("click",()=>{
 pruebaDecode.addEventListener("click",()=>{
   root.classList.add('hideElement')
   decode.classList.remove('hideElement')
+  const ubicacionD= document.getElementById("ubicacion").value;
+  console.log(ubicacionD)
+  const offsetD= parseInt(document.getElementById("offset").value);
+  console.log(offsetD)
+  const ubyy = window.cipher.decoding(offsetD, ubicacionD);
+  ubicacionD.innerHTML = ubyy;
 })
 
 returnCode.addEventListener("click",()=>{
+  location.reload();
   code.classList.add('hideElement')
   root.classList.remove('hideElement')
 })
 
 returnDecode.addEventListener("click",()=>{
+  location.reload();
   decode.classList.add('hideElement')
   root.classList.remove('hideElement')
 })

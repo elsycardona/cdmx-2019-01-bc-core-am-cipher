@@ -15,4 +15,22 @@ window.cipher = {
   //console.log(ubx);
   //alert(ubx);
   ubxEscrito.innerHTML = ubx.toString();
-    }};
+    }
+    //PINCHE COMA
+    ,
+
+
+  decoding: (offsetD, ubicacionD) => {
+
+    let mayusculaD= ubicacionD.toUpperCase();
+    let uby= "";
+
+  for(let i=0; i<mayusculaD.length; i++){
+    let letraAsciiD= mayusculaD.charCodeAt(i);
+    let formulaD= (letraAsciiD+65-offsetD)%26+65;
+    let resultadoD= String.fromCharCode(formulaD);
+    console.log(resultadoD);
+    uby+= resultadoD;
+     }
+  ubyEscrito.innerHTML = uby.toString();
+  }};
