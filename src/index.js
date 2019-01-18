@@ -7,7 +7,9 @@ const returnCode = document.getElementById("returnCode");
 const returnDecode = document.getElementById("returnDecode");
 const ubxEscrito = document.getElementById("ubxEscrito");
 const ubyEscrito = document.getElementById("ubyEscrito");
-//...
+/*Primero he declarado las CONST, utilizando los mismos IDs
+los llamo, desde el DOCUMENT atraves de getElement*/
+
 
 pruebaCode.addEventListener("click", () => {
   root.classList.add('hideElement')
@@ -18,7 +20,15 @@ pruebaCode.addEventListener("click", () => {
   //console.log(offset)
   const ubxx = window.cipher.encode(offset, ubicacion);
   ubxEscrito.innerHTML = ubxx
-
+/*Atraves de pruebaCode (que es un botón), le agrego un EVENT
+que al dar click haga la función de "esconder" la HOME y mostrar CODE,
+definida anteriormente en CSS.
+Dentro, agrego una nueva CONST "ubicación" donde lo que más importa es
+capturar su valor, el cual se va a cifrar.
+el OFFSET, indica el # de caracteres a moverse; el cual también debe
+capturarse para utilizarse posteriormente.
+la última CONST, ayuda a "llamar" desde el CIPHER.JS el objeto "ENCODE"
+con los parametros offset y "ubicación"*/
 })
 
 pruebaDecode.addEventListener("click", () => {
@@ -30,13 +40,22 @@ pruebaDecode.addEventListener("click", () => {
   //console.log(offsetD)
   const ubyy = window.cipher.decode(offsetD, ubicacionD);
   ubyEscrito.innerHTML = ubyy;
-  //const ubyEscrito= document.getElementById("ubyEscrito");
+/* En pruebaDecode, al igual que arriba agrego el evento click,
+que al hacerlo da la capacidad de esconder (la HOME) y mostrar(codeD).
+con la CONST "ubicaciónD", se captura (con .value) el valor del string.
+offsetD, igual captura el valor, y lo regresa como entero con parseInt.
+la constante UBYY llamada a la función CIPHER.JS*/
 })
 
 returnCode.addEventListener("click", () => {
   location.reload();
   code.classList.add('hideElement')
   root.classList.remove('hideElement')
+/*Al botón returnCode, se le asigna el Evento que al clickear
+limpia el formulario al recargar.
+A su vez agrega y quita la función de "esconder" de la página
+CODE y HOME, respectivamente. Lo mismo hace con el botón
+returnDecode abajo*/
 })
 
 returnDecode.addEventListener("click", () => {
@@ -44,36 +63,4 @@ returnDecode.addEventListener("click", () => {
   codeD.classList.add('hideElement')
   root.classList.remove('hideElement')
 })
-//COMENTARIO
-
-
-//function codificar (){
-//var caracteres = [];
-//valor = ubicacion.value;
-//for (var i=0; i<valor.length; i++){
-//caracteres[i] = valor.charAt(i).charCodeAt(0);
-//ascii const = i => i.charCodeAt (0);
-//}
-//code.innerHTML = caracteres.toString();
-//}
-
-
-//const ubicacion =
-//ubicacion.value;
-//console.log ("ubicacion");
-
-//codificar.addEventListener("click",msj);
-//Obteniendo el código ascii y convierte a mayusculas
-//function msj (){
-//  let mensajeObtenido =mensaje.value;
-// let mayuscula= mensajeObtenido.toUpperCase();
-//let mayus=mayuscula.charCodeAt();
-
-//for(let 1=0; i<mayuscula.length; i++){
-//  let letraAscii= mayuscula.charCodeAt(i);
-//let formula= (letraAscii-65+offset)%26+65;
-//let resultado= String.fromCharCode(formula);
-//console.log(resultado);
-//}
-//}
-//}
+//...
