@@ -1,15 +1,15 @@
-.hideElement{
-    display: none;
-    }
+.hideElement {
+  display: none;
+}
 
-  #root{
-    text-align:center;
-    }
-  
-  #code{
-    text-align:center;
-    }
+#root {
+  text-align: center;
+}
 
-  #decode{
-    text-align:center;
-    }
+#code {
+  text-align: center;
+}
+
+#codeD {
+  text-align: center;
+}
