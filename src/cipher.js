@@ -14,7 +14,7 @@ window.cipher = {
       }
       return ubx;
 
-      /*Se had descrito ENCODE como un objeto que realiza una función
+      /*Se ha descrito ENCODE como un objeto que realiza una función
       siendo OFFSET y UBICACIÓN sus argumentos.
       Se declara LET mayuscula para permitirse cambiar localmente,
       quien al string de UBICACION, genera las mayusculas con
