@@ -3,6 +3,7 @@
 .hideElement {
   display: none;
 }
+
 /*He agragado un HIDEELEMENT, para brindar 
 el atributo de esconderse, mostrando "nada"*/
 
@@ -21,13 +22,15 @@ el atributo de esconderse, mostrando "nada"*/
 .letrasF {
   color: rgb(42, 173, 167);
   font-family: 'Sarabun', sans-serif;
-  }
+}
+
 /*TEXT-ALIGN: Mueve los elementos por IDs
 donde center es centro, right derecha y left izq*/
 
 h1 {
-  font-family: 'Sarabun', sans-serif;}
- 
+  font-family: 'Sarabun', sans-serif;
+}
+
 p {
   font-family: 'Sarabun', sans-serif;
   font-size: 1.2em
@@ -39,11 +42,11 @@ label {
 
 button {
   font-family: 'Sarabun', sans-serif;
-  margin:20px;
-  width:95px;
-  height:50px;
-  border:10;
-  text-align:center;
+  margin: 20px;
+  width: 95px;
+  height: 50px;
+  border: 10;
+  text-align: center;
   font-size: 1em
 }
 
@@ -52,8 +55,8 @@ button:hover {
 }
 
 img {
-  height: 200px; 
+  height: 200px;
   width: 1000px;
 }
-  /*
- 
+
+/*
