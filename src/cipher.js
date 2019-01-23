@@ -1,54 +1,45 @@
 window.cipher = {
   // ... 
+
   encode: (offset, ubicacion) => {
-
-      let mayuscula = ubicacion.toUpperCase();
-      let ubx = "";
-
-      for (let i = 0; i < mayuscula.length; i++) {
-        let letraAscii = mayuscula.charCodeAt(i);
-        let formula = (letraAscii - 65 + offset) % 26 + 65;
-        let resultado = String.fromCharCode(formula);
-        //console.log(resultado);
-        ubx += resultado;
+    let newEncode = ""; //variable que va a capturar el resultado de la codificación
+    offset = Number(offset); 
+    for (let i=0; i < ubicacion.length; i++) {
+      let originalAscii = ubicacion.charCodeAt(i);
+      if (originalAscii >= 65 && originalAscii <= 90) {
+        let capitalLetter = (originalAscii -65 + offset)%26+65;
+        let capitalReturn = String.fromCharCode(capitalLetter);
+        newEncode += capitalReturn;
+      } else if (originalAscii >= 97 && originalAscii <= 122) {
+        let lowerLetter = (originalAscii -97 + offset)%26+97;
+        let lowerReturn = String.fromCharCode(lowerLetter);
+        newEncode += lowerReturn;
+      } else {
+        let characteres = String.fromCharCode(originalAscii);
+        newEncode += characteres;
       }
-      return ubx;
-
-      /*Se ha descrito ENCODE como un objeto que realiza una función
-      siendo OFFSET y UBICACIÓN sus argumentos.
-      Se declara LET mayuscula para permitirse cambiar localmente,
-      quien al string de UBICACION, genera las mayusculas con
-      TOUPPERCASE ()
-      A letraAscii se le aplica al string un charCodeAt(i) para que
-      desde el inicio de la cadena transforme lo solicitado
-      Para FORMULA, usé letraAscii, que al restarle 65 y sumarle el
-      valor fijo declarado extraido de OFFSET, se le multiplicará el
-      residuo de 26 (el número de caracteres del Alfabeto sin "ñ",
-      que es como si se eliminara por default el núm de vueltas innecesarias
-      al alfabeto)
-      + 65 (siendo 65 el inicio de la posición "0" en el códigoAscii
-      Para RESULTADO, se le agrega al string un FROMCHARCODE para pasar de
-      código Ascii a letra alfabetica, como la conocemos*/
-
     }
-    //  ¡¡¡  USAR ---- COMA ---- PARA OBJETOS  !!!
-    ,
-    
+    return newEncode;
+  },
 
   decode: (offsetD, ubicacionD) => {
-
-    let mayusculaD = ubicacionD.toUpperCase();
-    let uby = "";
-
-    for (let i = 0; i < mayusculaD.length; i++) {
-      let letraAsciiD = mayusculaD.charCodeAt(i);
-      let formulaD = (letraAsciiD + 65 - offsetD) % 26 + 65;
-      let resultadoD = String.fromCharCode(formulaD);
-      //console.log(resultadoD);
-      uby += resultadoD;
+    let newDecode = "";
+    offsetD = Number(offsetD);
+    for (let i=0; i< ubicacionD.length; i++){
+      let originalAscii = ubicacionD.charCodeAt(i);
+      if (originalAscii >= 65 && originalAscii <= 90) {
+        let capitalLetter = (originalAscii + 65 - offsetD)%26+65;
+        let capitalReturn = String.fromCharCode(capitalLetter);
+        newDecode += capitalReturn;
+      } else if (originalAscii >= 97 && originalAscii <= 122) {
+        let lowerLetter = (originalAscii -122-offsetD)%26+122;
+        let lowerReturn = String.fromCharCode(lowerLetter);
+        newDecode += lowerReturn;
+      } else {
+        let characteres = String.fromCharCode(originalAscii);
+        newDecode += characteres;
+      }
     }
-    return uby;
-    //ubyEscrito.innerHTML = uby.toString();
+      return newDecode;
   }
-};
-//...
+}

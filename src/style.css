@@ -17,20 +17,17 @@ el atributo de esconderse, mostrando "nada"*/
 #codeD {
   text-align: center;
 }
+
+.letrasF {
+  color: rgb(42, 173, 167);
+  font-family: 'Sarabun', sans-serif;
+  }
 /*TEXT-ALIGN: Mueve los elementos por IDs
 donde center es centro, right derecha y left izq*/
 
 h1 {
-  font-family: 'Sarabun', sans-serif;};
-
-#ubyEscrito {
-  font-family: 'Sarabun', sans-serif;
-}
-
-#ubxEscrito {
-  font-family: 'Sarabun', sans-serif;
-}
-
+  font-family: 'Sarabun', sans-serif;}
+ 
 p {
   font-family: 'Sarabun', sans-serif;
   font-size: 1.2em
