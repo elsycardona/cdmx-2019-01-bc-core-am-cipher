@@ -314,8 +314,6 @@ Si sólo se requiere una visualización, basta con abrirlo desde cualquier naveg
 1. Para visualizar el proyecto sólo debe abrirse un
 `Navegador Web`
 
-![Navegadores](https://cdn3.cnet.com/img/717ZWK5T8-SiQrRx0tDg1wQskSo=/1600x900/2017/01/12/1b70539f-e5fe-4b1f-bd25-7c98b62cba12/browser-logos.jpg)
-
 Abrir la URL `https://elsycardona.github.io/cdmx-2019-01-bc-core-am-cipher/src/`
 
 `Introducir texto y un número de desplazamiento, codificar o decodificar y saldrá el texto ya codificado o decodificado`
