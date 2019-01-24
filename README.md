@@ -266,29 +266,91 @@ Herramientas:
 Esta sección está  para ayudarte a llevar un control de lo que vas completando.
 
 ### Parte Obligatoria
-* [ ] `README.md` incluye info sobre proceso y decisiones de diseño.
-* [ ] `README.md` explica claramente quiénes son los usuarios y su relación con
+* [x] `README.md` incluye info sobre proceso y decisiones de diseño.
+* [x] `README.md` explica claramente quiénes son los usuarios y su relación con
   el producto.
-* [ ] `README.md` explica claramente cómo el producto soluciona los
+* [x] `README.md` explica claramente cómo el producto soluciona los
   problemas/necesidades de los usuarios.
-* [ ] Usa VanillaJS.
-* [ ] No utiliza `this`.
-* [ ] Implementa `cipher.encode`.
-* [ ] Implementa `cipher.decode`.
+* [x] Usa VanillaJS.
+* [x] No utiliza `this`.
+* [x] Implementa `cipher.encode`.
+* [x] Implementa `cipher.decode`.
 * [ ] Pasa linter con configuración provista.
-* [ ] Pasa pruebas unitarias.
-* [ ] Pruebas unitarias cubren 70% de _statements_, _functions_ y _lines_, y un
+* [x] Pasa pruebas unitarias.
+* [x] Pruebas unitarias cubren 70% de _statements_, _functions_ y _lines_, y un
   mínimo del 50% de _branches_.
-* [ ] Interfaz permite elegir el `offset` o _desplazamiento_ a usar en el
+* [x] Interfaz permite elegir el `offset` o _desplazamiento_ a usar en el
   cifrado/descifrado.
-* [ ] Interfaz permite escribir un texto para ser cifrado.
-* [ ] Interfaz muestra el resultado del cifrado correctamente.
-* [ ] Interfaz permite escribir un texto para ser descifrado.
-* [ ] Interfaz muestra el resultado del descifrado correctamente.
+* [x] Interfaz permite escribir un texto para ser cifrado.
+* [x] Interfaz muestra el resultado del cifrado correctamente.
+* [x] Interfaz permite escribir un texto para ser descifrado.
+* [x] Interfaz muestra el resultado del descifrado correctamente.
 
 ### Parte Opcional: "Hacker edition"
-* [ ] Cifra/descifra minúsculas
-* [ ] Cifra/descifra _otros_ caracteres (espacios, puntuación, `ñ`, `á`, ...)
-* [ ] Permite usar un `offset` negativo.
+* [x] Cifra/descifra minúsculas
+* [x] Cifra/descifra _otros_ caracteres (espacios, puntuación, `ñ`, `á`, ...)
+* [x] Permite usar un `offset` negativo.
 * [ ] Modelo de negocio.
+
+***
+
+#Proyecto 1 - Cipher
+
+Este proyecto esta pensado para ser usado por Paqueterías, personas que envían un paquete, o cualquier persona que requiera comunicarse con otra para el envio de "algo".
+
+Más información sobre el proceso de Diseño y Experiencia de Usuario (UX) [aquí.](https://docs.google.com/document/d/1VzDPUP0eryYm0fsqo57Ilqxt_JGK0aRz0VqXBEN29bo/edit?usp=sharing)
+
+##Indicaciones previas para el funcionamiento del proyecto
+
+....???
+
+##Pre-requisitos
+
+Este proyecto se hizo a tráves [Visual Studio Code](https://code.visualstudio.com/), utilizando [Git](https://git-scm.com/) para la descarga de los repositorios vía [GitHub](https://github.com/).
+Si sólo se requiere una visualización, basta con abrirlo desde cualquier navegador web.
+
+##Instalación
+
+1. Para visualizar el proyecto sólo debe abrirse un
+`Navegador Web`
+
+![Navegadores](https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiyvK3ThIfgAhV6CDQIHVGJAjUQjRx6BAgBEAU&url=http%3A%2F%2Fkarolinatecnologia.blogspot.com%2Fp%2Fprogramas-navegadores.html&psig=AOvVaw0LLvQyIa0retBzr06QPqdn&ust=1548440526211037)
+
+Abrir la URL `https://elsycardona.github.io/cdmx-2019-01-bc-core-am-cipher/src/`
+
+`Introducir texto y un número de desplazamiento, codificar o decodificar y saldrá el texto ya codificado o decodificado`
+
+2. Para editar el proyecto, se necesita clonar el respositorio desde [GitHub](https://github.com/) en la `Terminal`, usando [Git](https://git-scm.com/), [Node.js](https://nodejs.org/es/) y un archivo `package.json`
+
+Y tener instalado [Visual Studio Code](https://code.visualstudio.com/), o el editor de su preferencia
+
+##Pruebas
+
+Se realizaron pruebas unitarias, desde la `Terminal`, usando [NPM (Node Package Manage)](https://www.npmjs.com/get-npm).
+
+`npm run test`
+
+##Herramientas
+
+Durante este proceso se usarón diversas herramientas:
+- [Google](https://www.google.com/) - Buscador
+- [Visual Studio Code](https://code.visualstudio.com/) - Editor
+- [GitHub](https://github.com/) - Descarga de Repositorio y commits
+- [Git](https://git-scm.com/) - Interacción directa con la Terminal
+- [Marvel App]() - Creación de Prototipo
+- [Google Forms](https://www.google.com/forms/about/) - Generación de Test
+- [Google Drive]() - Reporte de UX
+
+##Autores
+
+- Elsy Cardona - [elsycardona](https://github.com/elsycardona/)
+
+##Agradecimientos
+
+Se agradece la ayuda, la comunicación y el empuje de el "Squad 2" de Laboraroria, generación #7:
+-Diana, Elenore, Ely, Fabiola, Gaby, Lore, Pau
+
+Se agradece la ayuda a las personas que testearon el proyecto y contribuyeron con sus comentarios
+
+A los Coaches y Jedis por su siempre ayuda técnica y de empuje.
 
