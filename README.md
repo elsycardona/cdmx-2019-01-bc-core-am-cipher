@@ -302,7 +302,7 @@ Más información sobre el proceso de Diseño y Experiencia de Usuario (UX) [aqu
 
 ## Indicaciones previas para el funcionamiento del proyecto
 
-....???
+Contar con una computadora, un navegador web e Internet
 
 ## Pre-requisitos
 
@@ -314,7 +314,7 @@ Si sólo se requiere una visualización, basta con abrirlo desde cualquier naveg
 1. Para visualizar el proyecto sólo debe abrirse un
 `Navegador Web`
 
-![Navegadores](https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiyvK3ThIfgAhV6CDQIHVGJAjUQjRx6BAgBEAU&url=http%3A%2F%2Fkarolinatecnologia.blogspot.com%2Fp%2Fprogramas-navegadores.html&psig=AOvVaw0LLvQyIa0retBzr06QPqdn&ust=1548440526211037)
+![Navegadores](https://cdn3.cnet.com/img/717ZWK5T8-SiQrRx0tDg1wQskSo=/1600x900/2017/01/12/1b70539f-e5fe-4b1f-bd25-7c98b62cba12/browser-logos.jpg)
 
 Abrir la URL `https://elsycardona.github.io/cdmx-2019-01-bc-core-am-cipher/src/`
 
@@ -348,7 +348,7 @@ Durante este proceso se usarón diversas herramientas:
 ## Agradecimientos
 
 Se agradece la ayuda, la comunicación y el empuje de el "Squad 2" de Laboraroria, generación #7:
--Diana, Elenore, Ely, Fabiola, Gaby, Lore, Pau
+- Diana, Elenore, Ely, Fabiola, Gaby, Lore, Pau
 
 Se agradece la ayuda a las personas que testearon el proyecto y contribuyeron con sus comentarios
 
