@@ -294,22 +294,22 @@ Esta sección está  para ayudarte a llevar un control de lo que vas completando
 
 ***
 
-#Proyecto 1 - Cipher
+# Proyecto 1 - Cipher
 
 Este proyecto esta pensado para ser usado por Paqueterías, personas que envían un paquete, o cualquier persona que requiera comunicarse con otra para el envio de "algo".
 
 Más información sobre el proceso de Diseño y Experiencia de Usuario (UX) [aquí.](https://docs.google.com/document/d/1VzDPUP0eryYm0fsqo57Ilqxt_JGK0aRz0VqXBEN29bo/edit?usp=sharing)
 
-##Indicaciones previas para el funcionamiento del proyecto
+## Indicaciones previas para el funcionamiento del proyecto
 
 ....???
 
-##Pre-requisitos
+## Pre-requisitos
 
 Este proyecto se hizo a tráves [Visual Studio Code](https://code.visualstudio.com/), utilizando [Git](https://git-scm.com/) para la descarga de los repositorios vía [GitHub](https://github.com/).
 Si sólo se requiere una visualización, basta con abrirlo desde cualquier navegador web.
 
-##Instalación
+## Instalación
 
 1. Para visualizar el proyecto sólo debe abrirse un
 `Navegador Web`
@@ -324,13 +324,13 @@ Abrir la URL `https://elsycardona.github.io/cdmx-2019-01-bc-core-am-cipher/src/`
 
 Y tener instalado [Visual Studio Code](https://code.visualstudio.com/), o el editor de su preferencia
 
-##Pruebas
+## Pruebas
 
 Se realizaron pruebas unitarias, desde la `Terminal`, usando [NPM (Node Package Manage)](https://www.npmjs.com/get-npm).
 
 `npm run test`
 
-##Herramientas
+## Herramientas
 
 Durante este proceso se usarón diversas herramientas:
 - [Google](https://www.google.com/) - Buscador
@@ -341,11 +341,11 @@ Durante este proceso se usarón diversas herramientas:
 - [Google Forms](https://www.google.com/forms/about/) - Generación de Test
 - [Google Drive]() - Reporte de UX
 
-##Autores
+## Autores
 
 - Elsy Cardona - [elsycardona](https://github.com/elsycardona/)
 
-##Agradecimientos
+## Agradecimientos
 
 Se agradece la ayuda, la comunicación y el empuje de el "Squad 2" de Laboraroria, generación #7:
 -Diana, Elenore, Ely, Fabiola, Gaby, Lore, Pau
